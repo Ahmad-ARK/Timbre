@@ -1,5 +1,8 @@
 import { prisma } from "@/lib/db";
 
+export const dynamic = 'force-dynamic';
+
+
 export default async function TestPage() {
     const voices = await prisma.voice.findMany();
 
